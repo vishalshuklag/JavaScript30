@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/drum.svg" type="image/x-icon">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Drum Kit</h1>
+    </header>
+
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">BASS DRUM</span>
+        </div>
+
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">CRASH CYMBAL</span>
+        </div>
+
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">RIDE CYMBAL</span>
+        </div>
+
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">FLOOR TOM</span>
+        </div>
+
+        <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">HIGH TOM</span>
+        </div>
+
+        <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">CLAP</span>
+        </div>
+
+        <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">SNARE DRUM</span>
+        </div>
+
+        <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">HI-HAT OPEN</span>
+        </div>
+
+        <div data-key="76" class="key">
+            <kbd>L</kbd>
+            <span class="sound">HI-HAT CLOSED</span>
+        </div>
+    </div>
+
+    <audio data-key="65" src="./sounds/bass-drum.mp3"></audio>
+    <audio data-key="83" src="sounds/crash-cymbal.mp3"></audio>
+    <audio data-key="68" src="sounds/ride-cymbal.mp3"></audio>
+    <audio data-key="70" src="sounds/floor-tom.mp3"></audio>
+    <audio data-key="71" src="sounds/high-tom.mp3"></audio>
+    <audio data-key="72" src="sounds/clap.mp3"></audio>
+    <audio data-key="74" src="sounds/snare-drum.mp3"></audio>
+    <audio data-key="75" src="sounds/hi-hat-open.mp3"></audio>
+    <audio data-key="76" src="sounds/hi-hat-closed.mp3"></audio>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
