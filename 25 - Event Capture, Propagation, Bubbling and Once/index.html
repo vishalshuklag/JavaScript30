@@ -40,7 +40,29 @@
   </div>
 <button></button>
 <script>
+  const divs = document.querySelectorAll('div');
 
+  function logText(e) {
+    // console.log(this.classList.value);
+    // console.log(this);
+    console.log(`CurrentTarget: ${e.currentTarget.className} traget: ${e.target.className}`);
+    // to stop propagation
+    e.stopPropagation();
+  }
+
+  // document.body.addEventListener('click', logText);
+
+  // Bubbling
+  // divs.forEach(div => div.addEventListener('click', logText, {
+  //   capture : false
+  // }))
+
+  // Capturing
+  divs.forEach(div => div.addEventListener('click', logText, {
+    capture : true,
+    // once: true => allows event to happen only once and then remove the eventListener from the element
+    once : true
+  }))
 </script>
 </body>
 </html>
